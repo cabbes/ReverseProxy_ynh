@@ -1,0 +1,44 @@
+{
+"name": "ReverseProxy",
+"id": "reverseProxy",
+"description": {
+"en": "Simple Reverse Proxy for Yunohost",
+"fr": "Simple Reverse Proxy pour Yunohost"
+},
+"developer": {
+"name": "cabbes",
+"email": "shornero@gmail.com",
+"url": "https://github.com/cabbes/ReverseProxy_ynh"
+},
+"multi_instance": "true",
+"arguments": {
+"install": [
+{
+"name": "domain",
+"ask": {
+"en": "Choose a domain",
+"fr": "Choisissez un domaine"
+},
+"example": "domain.org"
+},
+{
+"name": "path",
+"ask": {
+"en": "Choose a path",
+"fr": "Choisissez un chemin"
+},
+"example": "/application",
+"default": "/application"
+},
+{
+"name": "server",
+"ask": {
+"en": "Choose IP where your application is installed",
+"fr": "Choisissez l'IP où est installée votre application"
+},
+"example": "127.0.0.1",
+"default": "127.0.0.1"
+}
+]
+}
+}
